@@ -1,9 +1,15 @@
 <div class="hero-unit">
-  <h1>'Allo, 'Allo!</h1>
-  <p>You now have</p>
+  <h1>{{'nothing here' + ' yet!' }}</h1>
   <ul>
       <li ng-repeat="thing in awesomeThings">{{thing}}</li>
   </ul>
   <p>installed.</p>
-  <h3>Enjoy coding! - Yeoman</h3>
+  <h3>You have {{reservations.length}} Reservations</h3>
+  
+  <ul>
+      <li ng-repeat="reservation in reservations">
+          <p><strong>{{reservation.name}}</strong></p>
+          <p>{{reservation.date}}, {{reservaiton.time}}</p>
+      </li>
+  </ul>
 </div>
